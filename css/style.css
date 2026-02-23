@@ -1,7 +1,23 @@
+:root {
+  --primary: #ff4c68;
+  --secondary: #ef8172;
+  --accent: #00bfff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Hero Gradient */
 .gradient-background {
-  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background: linear-gradient(
+    300deg,
+    var(--accent),
+    var(--primary),
+    var(--secondary)
+  );
   background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  animation: gradient-animation 15s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -15,26 +31,39 @@
     background-position: 0% 50%;
   }
 }
-#testimonial {
-  background-color: #bdc0c0;
-}
-.text h1{
-  font-weight: 700;
-  font-size: 2.5rem;
-  padding: 2rem;
-  color: black;
-}
-#testimonial .firstimg{
-  border-radius: 50%;
-}
 
-.icon-square {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
+/* Image styling */
+.hero-img {
+  transform: rotate(15deg);
+  max-height: 550px;
 }
 
 .profile-img {
-  height: 100px;
+  width: 120px;
   border-radius: 50%;
+}
+
+/* Pricing Cards */
+.pricing-card {
+  transition: transform 0.3s ease;
+  border-radius: 1rem !important;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.pricing-card.featured {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+}
+
+/* Press Section Logos */
+.press-logos img {
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.press-logos img:hover {
+  filter: grayscale(0%);
 }
