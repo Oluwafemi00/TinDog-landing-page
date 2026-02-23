@@ -22,7 +22,7 @@ TinDog is a fictional Tinder-style landing page for dogs. This repository contai
 1. **Clone the repository:**
 
    ```bash
-   git clone [https://github.com/your-username/tindog-refactor.git](https://github.com/Oluwafemi00/TinDog-website.git)s\
+   git clone https://github.com/Oluwafemi00/TinDog-website.git
    ```
 
 2. Open the project:
