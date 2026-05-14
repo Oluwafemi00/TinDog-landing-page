@@ -3,321 +3,509 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TinDog | Meet New Dogs Nearby</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>TinDog — Meet New Dogs Nearby</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <header id="title" class="gradient-background overflow-hidden">
-      <nav class="container navbar navbar-expand-lg navbar-dark pt-4">
-        <a class="navbar-brand fs-2 fw-bold" href="#">tindog</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggler"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Download</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="nav-logo">tindog</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#footer">Download</a></li>
+        <li><a href="#" class="nav-cta">Get the App</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </nav>
 
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6 text-center text-lg-start">
-            <h1 class="display-3 fw-black text-white lh-1 mb-4">
-              Meet new and interesting dogs nearby.
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero">
+      <div class="hero-mesh" aria-hidden="true"></div>
+      <div class="container" style="padding-top: 20px; padding-bottom: 80px">
+        <div class="hero-inner">
+          <div class="hero-left">
+            <div class="hero-tag">
+              <span class="hero-tag-dot"></span>
+              The #1 App for Dogs
+            </div>
+            <h1 class="hero-title">
+              Meet new &amp;<br />
+              interesting dogs<br />
+              <span class="highlight">nearby.</span>
             </h1>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button class="btn btn-light btn-lg px-4 me-md-2">
-                <img src="./images/apple.svg" alt="" class="me-2" />Download
-              </button>
-              <button class="btn btn-outline-light btn-lg px-4">
-                <img
-                  src="./images/google-play.svg"
-                  alt=""
-                  class="me-2"
-                />Download
-              </button>
+            <p class="hero-sub">
+              Swipe right on your dog's next best friend. Used by over 5 million
+              pet owners in 40+ countries worldwide.
+            </p>
+            <div class="hero-btns">
+              <a href="#" class="btn-store btn-apple">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                  />
+                </svg>
+                App Store
+              </a>
+              <a href="#" class="btn-store btn-google">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M3.18 23.76c.37.2.79.24 1.19.14l12.52-12.52L13.42 8l-10.6 14.48c-.19.41-.12.89.36 1.28zm16.35-10.3L16.9 12l2.63-1.46c.73-.4.73-1.48 0-1.88L16.9 7.18c-.73-.4-1.63.1-1.63.94V9L8.69 2.46C8.29 2.06 7.72 2 7.3 2.24c-.42.24-.67.69-.67 1.16v17.22c0 .47.25.92.67 1.16.42.24.99.18 1.39-.22L16.9 15v.88c0 .84.9 1.34 1.63.94l2.63-1.46c.73-.4.73-1.48-.63-1.9z"
+                  />
+                </svg>
+                Google Play
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div class="hstat">
+                <span class="hstat-num">5M+</span>
+                <span class="hstat-label">Users</span>
+              </div>
+              <div class="hstat-sep"></div>
+              <div class="hstat">
+                <span class="hstat-num">40+</span>
+                <span class="hstat-label">Countries</span>
+              </div>
+              <div class="hstat-sep"></div>
+              <div class="hstat">
+                <span class="hstat-num">98%</span>
+                <span class="hstat-label">Happy dogs</span>
+              </div>
             </div>
           </div>
-          <div class="col-10 col-sm-8 col-lg-6 mx-auto hero-image-container">
-            <img
-              src="./images/iphone.png"
-              class="d-block mx-lg-auto img-fluid hero-img"
-              alt="iPhone Mockup"
-              loading="lazy"
-            />
+
+          <div class="hero-right">
+            <div class="phone-wrap">
+              <div class="phone-bg" aria-hidden="true"></div>
+              <!-- Beautiful SVG phone mockup with a dog card UI inside -->
+              <svg
+                class="phone-mockup"
+                viewBox="0 0 260 520"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Phone body -->
+                <rect width="260" height="520" rx="40" fill="#1A1A22" />
+                <rect
+                  x="2"
+                  y="2"
+                  width="256"
+                  height="516"
+                  rx="38"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.08)"
+                  stroke-width="1.5"
+                />
+                <!-- Screen -->
+                <rect
+                  x="8"
+                  y="14"
+                  width="244"
+                  height="492"
+                  rx="33"
+                  fill="#0C0C10"
+                />
+                <!-- Notch -->
+                <rect
+                  x="90"
+                  y="14"
+                  width="80"
+                  height="26"
+                  rx="13"
+                  fill="#1A1A22"
+                />
+                <!-- Dog card UI -->
+                <rect
+                  x="16"
+                  y="54"
+                  width="228"
+                  height="300"
+                  rx="20"
+                  fill="#1E1E28"
+                />
+                <!-- Gradient overlay on card -->
+                <defs>
+                  <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="40%" stop-color="transparent" />
+                    <stop offset="100%" stop-color="rgba(0,0,0,0.85)" />
+                  </linearGradient>
+                  <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#FF6B7A" />
+                    <stop offset="100%" stop-color="#FFAA80" />
+                  </linearGradient>
+                </defs>
+                <!-- Dog silhouette placeholder -->
+                <ellipse cx="130" cy="170" rx="70" ry="80" fill="#2A2A38" />
+                <circle cx="130" cy="140" r="38" fill="#333345" />
+                <!-- Ears -->
+                <ellipse
+                  cx="100"
+                  cy="118"
+                  rx="16"
+                  ry="24"
+                  fill="#2A2A38"
+                  transform="rotate(-15 100 118)"
+                />
+                <ellipse
+                  cx="160"
+                  cy="118"
+                  rx="16"
+                  ry="24"
+                  fill="#2A2A38"
+                  transform="rotate(15 160 118)"
+                />
+                <!-- Eyes -->
+                <circle cx="118" cy="136" r="7" fill="#1A1A28" />
+                <circle cx="142" cy="136" r="7" fill="#1A1A28" />
+                <circle cx="120" cy="134" r="3" fill="#fff" opacity="0.9" />
+                <circle cx="144" cy="134" r="3" fill="#fff" opacity="0.9" />
+                <!-- Nose -->
+                <ellipse cx="130" cy="150" rx="6" ry="4" fill="#111" />
+                <!-- Card overlay -->
+                <rect
+                  x="16"
+                  y="54"
+                  width="228"
+                  height="300"
+                  rx="20"
+                  fill="url(#cardGrad)"
+                />
+                <!-- Dog name tag -->
+                <rect
+                  x="24"
+                  y="306"
+                  width="140"
+                  height="36"
+                  rx="10"
+                  fill="rgba(255,255,255,0.06)"
+                />
+                <text
+                  x="34"
+                  y="328"
+                  font-family="sans-serif"
+                  font-size="14"
+                  font-weight="700"
+                  fill="#F0ECF8"
+                >
+                  Buddy, 3
+                </text>
+                <text
+                  x="34"
+                  y="342"
+                  font-family="sans-serif"
+                  font-size="10"
+                  fill="#9898B8"
+                >
+                  Golden Retriever · 0.8 mi
+                </text>
+                <!-- Like/Pass buttons -->
+                <circle
+                  cx="90"
+                  cy="400"
+                  r="28"
+                  fill="#1E1E28"
+                  stroke="rgba(255,255,255,0.08)"
+                  stroke-width="1"
+                />
+                <text
+                  x="90"
+                  y="408"
+                  font-family="sans-serif"
+                  font-size="22"
+                  text-anchor="middle"
+                  fill="#D45A5A"
+                >
+                  ✕
+                </text>
+                <circle cx="170" cy="400" r="28" fill="url(#heroGrad)" />
+                <text
+                  x="170"
+                  y="408"
+                  font-family="sans-serif"
+                  font-size="22"
+                  text-anchor="middle"
+                  fill="#fff"
+                >
+                  ♥
+                </text>
+                <!-- Bottom bar dots -->
+                <circle cx="80" cy="470" r="4" fill="#333345" />
+                <circle cx="100" cy="470" r="4" fill="url(#heroGrad)" />
+                <circle cx="120" cy="470" r="4" fill="#333345" />
+                <circle cx="140" cy="470" r="4" fill="#333345" />
+                <circle cx="160" cy="470" r="4" fill="#333345" />
+                <circle cx="180" cy="470" r="4" fill="#333345" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section id="features" class="py-5 bg-white">
-        <div class="container py-5">
-          <div class="row g-4 row-cols-1 row-cols-lg-3 text-center">
-            <div class="feature col">
-              <img
-                src="./images/check2-square.svg"
-                alt=""
-                class="mb-3"
-                height="40"
-              />
-              <h3 class="fw-bold">Easy to use.</h3>
-              <p class="text-muted px-4">
-                So easy to use, even your dog could do it.
-              </p>
-            </div>
-            <div class="feature col">
-              <img
-                src="./images/mortarboard.svg"
-                alt=""
-                class="mb-3"
-                height="40"
-              />
-              <h3 class="fw-bold">Elite Clientele.</h3>
-              <p class="text-muted px-4">
-                We have all the dogs, the greatest dogs.
-              </p>
-            </div>
-            <div class="feature col">
-              <img
-                src="./images/arrow-through-heart.svg"
-                alt=""
-                class="mb-3"
-                height="40"
-              />
-              <h3 class="fw-bold">Guaranteed to work.</h3>
-              <p class="text-muted px-4">
-                Find the love of your dog's life or your money back.
-              </p>
-            </div>
-          </div>
+    <!-- ═══════════ FEATURES ═══════════ -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="features-head">
+          <p class="section-label fade-up">01 / Why TinDog</p>
+          <h2 class="section-title fade-up" style="--d: 0.05s">
+            Everything your dog <em>deserves</em>
+          </h2>
+          <p class="section-sub fade-up" style="--d: 0.1s">
+            We built every feature with your dog's happiness in mind. No ads, no
+            noise — just connections.
+          </p>
         </div>
-      </section>
-
-      <section id="testimonials" class="py-5 bg-light-subtle text-center">
-        <div
-          id="testimonialCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner container">
-            <div class="carousel-item active py-5">
-              <h2 class="display-6 fw-bold px-md-5 mb-4">
-                "I no longer have to sniff other dogs for love. I've found the
-                hottest Corgi on TinDog. Woof."
-              </h2>
-              <img
-                class="profile-img shadow mb-3"
-                src="./images/dog-img.jpg"
-                alt="dog-profile"
-              />
-              <p class="text-secondary">Pebbles, New York</p>
-            </div>
-            <div class="carousel-item py-5">
-              <h2 class="display-6 fw-bold px-md-5 mb-4">
-                "My dog used to be so lonely, but with TinDog's help, they've
-                found the love of their life."
-              </h2>
-              <img
-                class="profile-img shadow mb-3"
-                src="./images/lady-img.jpg"
-                alt="lady-profile"
-              />
-              <p class="text-secondary">Beverly, Illinois</p>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide="prev"
-          >
-            <span
-              class="carousel-control-prev-icon bg-dark rounded-circle"
-              aria-hidden="true"
-            ></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#testimonialCarousel"
-            data-bs-slide="next"
-          >
-            <span
-              class="carousel-control-next-icon bg-dark rounded-circle"
-              aria-hidden="true"
-            ></span>
-          </button>
-        </div>
-
-        <div class="container mt-5">
-          <div
-            class="row align-items-center justify-content-center g-5 opacity-50 press-logos"
-          >
-            <div class="col-6 col-md-2">
-              <img
-                src="./images/techcrunch.png"
-                class="img-fluid"
-                alt="TechCrunch"
-              />
-            </div>
-            <div class="col-6 col-md-2">
-              <img
-                src="./images/mashable.png"
-                class="img-fluid"
-                alt="Mashable"
-              />
-            </div>
-            <div class="col-6 col-md-2">
-              <img
-                src="./images/bizinsider.png"
-                class="img-fluid"
-                alt="Business Insider"
-              />
-            </div>
-            <div class="col-6 col-md-2">
-              <img src="./images/tnw.png" class="img-fluid" alt="TNW" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="pricing" class="py-5 border-top">
-        <div class="container py-5">
-          <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold">A Plan for Every Dog's Needs</h2>
-            <p class="fs-5 text-muted">
-              Simple and affordable price plans for you and your dog.
+        <div class="features-grid">
+          <div class="feature-card fade-up" style="--d: 0.05s">
+            <div class="feature-icon">🐾</div>
+            <h3>Breed Matching</h3>
+            <p>
+              Smart algorithm matches dogs by personality, size, energy level,
+              and proximity — not just looks.
             </p>
           </div>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100 pricing-card border-0 shadow-sm">
-                <div class="card-header bg-transparent py-3"><h4>Free</h4></div>
-                <div class="card-body">
-                  <h1 class="card-title">
-                    $0<small class="text-muted fw-light">/mo</small>
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>5 Matches Per Day</li>
-                    <li>10 Messages Per Day</li>
-                    <li>Unlimited App Usage</li>
-                  </ul>
-                  <button class="btn btn-lg btn-outline-dark w-100">
-                    Sign Up
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 pricing-card featured border-0 shadow-lg">
-                <div class="card-header py-3 border-0">
-                  <h4 class="mb-0">Labrador</h4>
-                  <span class="badge bg-light text-primary rounded-pill"
-                    >BEST VALUE</span
-                  >
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title">
-                    $15<small class="text-white-50 fw-light">/mo</small>
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>Unlimited Matches</li>
-                    <li>Unlimited Messages</li>
-                    <li>Unlimited App Usage</li>
-                  </ul>
-                  <button class="btn btn-lg btn-light w-100 fw-bold">
-                    Get Started
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100 pricing-card border-0 shadow-sm">
-                <div class="card-header bg-transparent py-3">
-                  <h4>Mastiff</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title">
-                    $29<small class="text-muted fw-light">/mo</small>
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>Priority Listing</li>
-                    <li>15 GB of Storage</li>
-                    <li>Phone & Email Support</li>
-                  </ul>
-                  <button class="btn btn-lg btn-dark w-100">Contact Us</button>
-                </div>
-              </div>
-            </div>
+          <div class="feature-card fade-up" style="--d: 0.12s">
+            <div class="feature-icon">🎓</div>
+            <h3>Elite Clientele</h3>
+            <p>
+              We have all the dogs. The greatest dogs. Verified profiles with
+              health records and temperament scores.
+            </p>
+          </div>
+          <div class="feature-card fade-up" style="--d: 0.19s">
+            <div class="feature-icon">💝</div>
+            <h3>Guaranteed Match</h3>
+            <p>
+              Find the love of your dog's life or your money back. We stand by
+              every pawfect connection.
+            </p>
+          </div>
+          <div class="feature-card fade-up" style="--d: 0.06s">
+            <div class="feature-icon">📍</div>
+            <h3>Nearby Discovery</h3>
+            <p>
+              Real-time location-based matching shows dogs within walking
+              distance of your park or neighbourhood.
+            </p>
+          </div>
+          <div class="feature-card fade-up" style="--d: 0.13s">
+            <div class="feature-icon">💬</div>
+            <h3>Secure Messaging</h3>
+            <p>
+              End-to-end encrypted chats with photo sharing, voice notes, and
+              playdate scheduling built right in.
+            </p>
+          </div>
+          <div class="feature-card fade-up" style="--d: 0.2s">
+            <div class="feature-icon">⭐</div>
+            <h3>Dog Reviews</h3>
+            <p>
+              Community-sourced ratings help you pick trustworthy playmates.
+              Real reviews from real owners.
+            </p>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer id="footer" class="py-5 bg-light border-top">
+    <!-- ═══════════ TESTIMONIALS ═══════════ -->
+    <section id="testimonials" class="testimonials">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 mb-4">
-            <h4 class="fw-bold text-primary">tindog</h4>
-            <p class="text-muted">
+        <div class="testimonials-head fade-up">
+          <p class="section-label">02 / Testimonials</p>
+          <h2 class="section-title">Tails are wagging</h2>
+          <p class="section-sub">
+            Don't take our word for it — hear from the dogs themselves.
+          </p>
+        </div>
+
+        <div class="carousel" id="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">
+                I no longer have to sniff other dogs for love. I've found the
+                hottest Corgi on TinDog.
+              </p>
+              <img
+                class="testimonial-avatar"
+                src="https://api.dicebear.com/8.x/fun-emoji/svg?seed=pebbles"
+                alt="Pebbles"
+              />
+              <span class="testimonial-name">Pebbles · New York</span>
+            </div>
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">
+                My dog used to be so lonely, but with TinDog's help, they found
+                the love of their life in two days.
+              </p>
+              <img
+                class="testimonial-avatar"
+                src="https://api.dicebear.com/8.x/fun-emoji/svg?seed=beverly"
+                alt="Beverly"
+              />
+              <span class="testimonial-name">Beverly · Illinois</span>
+            </div>
+            <div class="testimonial-slide">
+              <p class="testimonial-quote">
+                Best investment I ever made. Max found three playdates this week
+                alone. He's never been happier.
+              </p>
+              <img
+                class="testimonial-avatar"
+                src="https://api.dicebear.com/8.x/fun-emoji/svg?seed=max"
+                alt="Max's Owner"
+              />
+              <span class="testimonial-name">Jordan · London</span>
+            </div>
+          </div>
+          <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+
+        <!-- PRESS -->
+        <div class="press">
+          <span class="press-label">As seen in</span>
+          <div class="press-logos">
+            <span class="press-logo">TechCrunch</span>
+            <span class="press-logo">Mashable</span>
+            <span class="press-logo">Business Insider</span>
+            <span class="press-logo">TNW</span>
+            <span class="press-logo">Wired</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ PRICING ═══════════ -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="pricing-head fade-up">
+          <p class="section-label">03 / Pricing</p>
+          <h2 class="section-title">A plan for every dog's needs</h2>
+          <p class="section-sub">
+            Simple, transparent pricing. No hidden fees, no tricks — just
+            treats.
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card fade-up" style="--d: 0.05s">
+            <div>
+              <div class="price-name">Free</div>
+            </div>
+            <div>
+              <span class="price-amount">$0</span
+              ><span class="price-period">/mo</span>
+            </div>
+            <ul class="price-list">
+              <li>5 matches per day</li>
+              <li>10 messages per day</li>
+              <li>Unlimited app usage</li>
+            </ul>
+            <button class="btn-plan btn-plan-ghost">Get Started</button>
+          </div>
+
+          <div class="price-card featured fade-up" style="--d: 0.12s">
+            <div>
+              <div class="price-badge">Best Value</div>
+              <div class="price-name">Labrador</div>
+            </div>
+            <div>
+              <span class="price-amount">$15</span
+              ><span
+                class="price-period"
+                style="color: rgba(240, 236, 248, 0.5)"
+                >/mo</span
+              >
+            </div>
+            <ul class="price-list" style="--check-color: var(--coral)">
+              <li>Unlimited matches</li>
+              <li>Unlimited messages</li>
+              <li>Priority listing</li>
+              <li>Verified badge</li>
+            </ul>
+            <button class="btn-plan btn-plan-primary">Choose Labrador</button>
+          </div>
+
+          <div class="price-card fade-up" style="--d: 0.19s">
+            <div>
+              <div class="price-name">Mastiff</div>
+            </div>
+            <div>
+              <span class="price-amount">$29</span
+              ><span class="price-period">/mo</span>
+            </div>
+            <ul class="price-list">
+              <li>Everything in Labrador</li>
+              <li>15 GB photo storage</li>
+              <li>Phone &amp; email support</li>
+              <li>Early access features</li>
+            </ul>
+            <button class="btn-plan btn-plan-dark">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <div class="footer-logo">tindog</div>
+            <p>
               The #1 app for dogs to find their soulmates. Trusted by millions
               of pet owners worldwide.
             </p>
-            <p class="small text-muted">© 2026 TinDog Inc.</p>
+            <small>© 2026 TinDog Inc. All rights reserved.</small>
           </div>
-          <div class="col-6 col-md-2 mb-3">
+          <div class="footer-col">
             <h5>Product</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Features</a>
-              </li>
+            <ul class="footer-links">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#">Changelog</a></li>
+              <li><a href="#">API</a></li>
             </ul>
           </div>
-          <div class="col-md-4 offset-md-2">
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul class="footer-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
             <h5>Join the Pack</h5>
-            <p class="text-muted">Get dog training tips and app updates.</p>
-            <div class="d-flex gap-2">
+            <p
+              style="font-size: 13px; color: var(--text2); margin-bottom: 12px"
+            >
+              Get dog training tips and app updates.
+            </p>
+            <form class="newsletter-form" onsubmit="return false;">
               <input
                 type="email"
-                class="form-control"
-                placeholder="Email address"
+                class="newsletter-input"
+                placeholder="your@email.com"
               />
-              <button class="btn btn-primary">Join</button>
-            </div>
+              <button class="btn-newsletter">Join</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Made with ♥ for dogs everywhere</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" title="Twitter">𝕏</a>
+            <a href="#" class="social-btn" title="Instagram">◈</a>
+            <a href="#" class="social-btn" title="TikTok">▶</a>
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
