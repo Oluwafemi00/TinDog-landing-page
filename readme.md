@@ -47,7 +47,7 @@ TinDog is a fictional dog-matching app landing page — rebuilt from a Bootstrap
 ## Project Structure
 
 ```
-tindog.html      ← Complete app: HTML + embedded CSS + embedded JS
+index.html      ← Complete app: HTML + embedded CSS + embedded JS
 ```
 
 Rebuilt from a multi-file Bootstrap project into a single maintainable file — demonstrates understanding of when file separation adds vs reduces clarity.
@@ -66,7 +66,7 @@ Rebuilt from a multi-file Bootstrap project into a single maintainable file — 
 ## Run Locally
 
 ```bash
-open tindog.html
+open index.html
 ```
 
 ---
